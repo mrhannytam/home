@@ -1,0 +1,72 @@
+html {
+    scroll-behavior: smooth;
+    min-width: 1000px;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    font-size: 20px;
+}
+
+.container-fluid:nth-child(even){
+    background: url(../media/brick.jpg);
+    background-size: cover;
+}
+
+.padding{
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.title{
+    padding-top: 50px;
+}
+
+p{
+    padding: 5px;
+}
+
+.row > div img{
+    height: 100%;
+    width: 100%;
+}
+
+#softskill{
+    text-align: right;
+}
+
+dd{
+    padding: 5px;
+}
+
+ul{
+    padding-left: 5%;
+}
+
+h1{
+    font-weight: bold;
+    text-align: center;
+}
+
+.table{
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    text-transform: capitalize;
+}
+th{
+    text-align: center;
+}
+
+#carousel{
+    width: 70%;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+#images img{
+    height: 50%;
+    width: 100%;
+}

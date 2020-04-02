@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tam Siu Hang Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="js/index.js"></script>
+  <style>
+  </style>
+  <!--
+        As frame is not support in HTML5, I change the frame structure to CSS grid (Bootstrap)
+
+    ## Basic Requirment
+    ```
+    Title * 1
+    Name * 2
+    Picture * 7
+    Introduction * 1
+    table * 1
+    frame * 5
+    ```
+
+    ## Addiional features
+    ```
+    Bootstrap Glyphicons * 5
+    fixed navigation bar * 1
+    Smooth Bootstrap scrollspy * 1
+    Bootstrap carousel * 1
+    JS input checking * 1
+    ```
+
+    ## References
+    ```
+    https://www.w3schools.com/bootstrap/bootstrap_carousel.asp
+    https://www.w3schools.com/bootstrap/bootstrap_scrollspy.asp
+    ```
+  -->
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Tam Siu Hang</a>
+      </div>
+      <div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="#information"><span class="glyphicon glyphicon-user"></span> About Me</a></li>
+            <li><a href="#softskill"><span class="glyphicon glyphicon-lock"></span> Soft Skill</a></li>
+            <li><a href="#hardskill"><span class="glyphicon glyphicon-wrench"></span> Hard Skill</a></li>
+            <li><a href="#grade"><span class="glyphicon glyphicon-education"></span> Grade</a></li>
+            <li><a href="#gallery"><span class="glyphicon glyphicon-picture"></span> Gallery</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid title">
+    <h1>Tam Siu Hang Webpage</h1>
+  </div>
+
+  <div id="information" class="container-fluid padding">
+    <h1>About Me</h1>
+    <div class="row">
+      <div class="col-md-2" id="profile">
+        <img src='./media/profile.jpg'>
+      </div>
+      <div class="col-md-10">
+        <p>
+          Name: Tam Siu Hang
+        </p>
+        <p>
+          Contact: sshanktam@gmail.com
+        </p>
+        <p>
+          University: The Hong Kong Polytechnic University <br>
+          Programme: BSc in Information Security <br>
+        </p>
+        <p>
+          I am senior year one freshman in the Hong Kong Polytechnic University.
+          I studied Information Technology in HKCC.
+          I am looking for a challenging professional job to enhance my knowledge of new technology and problem-solving skills.
+        </p>     
+      </div>
+    </div>
+    
+    
+  </div>
+  <div id="softskill" class="container-fluid padding">
+    <h1>Soft Skill</h1>
+    <div class="row">
+      <div class="col-md-8">
+        <dl>
+          <dd>Quick Learner</dd>
+          <dd>Team Work</dd>
+          <dd>Time management</dd>
+          <dd>Decision making</dd>
+          <dd>Patience</dd>
+          <dd>Independence</dd>
+          <dd>Innovation</dd>
+        </dl>
+      </div>
+      <div class="col-md-4">
+        <img id="softskill-img"src="media/softskill.jpg">
+      </div>
+    </div>
+    
+    
+  </div>
+  <div id="hardskill" class="container-fluid padding">
+    <h1>Hard Skill</h1>
+    <div class="row">
+      <div class="col-md-4">
+        <img src="media/hardskill.jpg">
+      </div>
+      <div class="col-md-8">
+        <ul>
+          <li>Python</li>
+          <li>C++</li>
+          <li>Java</li>
+          <li>Javascript</li>
+          <li>JQuery</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Linux</li>
+          <li>PHP</li>
+          <li>MySQL</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="grade" class="container-fluid padding">
+    <div class="row">
+      <h1>Grade</h1>
+      <table class="table">
+        <tr>
+          <th scope="col">Subject</th>
+          <th scope="col">Grade</th>
+        </tr>
+        <tr><td>Number, Combinatorics and Statistics</td><td>a</td></tr>
+        <tr><td>Computer Systems Security</td><td>b+</td></tr>
+        <tr><td>Network Technologies and Security</td><td>b+</td></tr>
+        <tr><td>Data and Computer Communications</td><td>a</td></tr>
+        <tr><td>Map Reading and Interpretation</td><td>b+</td></tr>
+        <tr><td>Web Application Design and Development</td><td><input type="text" id="letter"></td></tr>
+      </table>
+    </div>
+  </div>
+  <div id="gallery" class="container-fluid padding">
+    <h1>Gallery</h1>
+    <div class="row">
+      <div id="carousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel" data-slide-to="1"></li>
+          <li data-target="#carousel" data-slide-to="2"></li>
+          <li data-target="#carousel" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div id="images" class="item active">
+            <img src="./media/1.jpg">
+          </div>
+          <div class="item">
+            <img src="./media/2.jpg">
+          </div>
+          <div class="item">
+            <img src="./media/3.jpg">
+          </div>
+          <div class="item">
+            <img src="./media/4.jpg">
+          </div> 
+        </div>
+        <a class="left carousel-control" href="#carousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
